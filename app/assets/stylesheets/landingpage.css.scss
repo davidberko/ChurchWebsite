@@ -1,0 +1,82 @@
+// Place all the styles related to the landingpage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main-header {
+	border: 1px solid black;
+	text-align: center;
+	font-style: Tahoma;
+	font-size: 100px;
+}
+
+#streaming-banner {
+	width: 1000px;
+	heigt: 200px;
+	border: 1px solid black;
+}
+
+#big-wrapper {
+	margin-right: 389px;
+	margin-left: 389px;
+	width: 1000px;
+	text-align: left;
+}
+
+#side-nav {
+	width: 250px;
+	border: 1px solid black;
+	float: left;
+}
+
+td#link {
+	width: 250px;
+	border: 1px solid black;
+	height: 100px;
+	font-size: 40px;
+	padding: 20px;
+}
+
+td#social {
+	width: 250px;
+	border: 1px solid black;
+	height: 100px;
+	font-size: 40px;
+	padding: 20px;
+}
+
+div#welcome-section {
+	
+}
+
+#right-sidebar {
+	width: 250px;	
+	border: 1px solid black;
+	float:right;
+}
+
+td#our-location {
+	width: 250px;
+	height: 246px;
+	border: 1px solid black;
+}
+td#up-next {
+	width: 250px;
+	height: 246px;
+	border: 1px solid black;
+}
+td#latest-message {
+	width: 250px;
+	height: 246px;
+	border: 1px solid black;
+}
+td#latest-blog {
+	width: 250px;
+	height: 246px;
+	border: 1px solid black;
+}
+footer {
+	border: 1px solid black;
+	clear: both;
+	border-top: 1px solid black;
+	text-align: center;
+}
