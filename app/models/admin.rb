@@ -1,6 +1,8 @@
 class Admin < ActiveRecord::Base
-  attr_accessible :email, :password, :password_confirmation, :role
+  attr_accessible :email, :password, :password_confirmation, :role, :name
   attr_accessor :password
+  belongs_to :blogs
+  has_many :blogs
 
   ROLES = %w[admin]
 
