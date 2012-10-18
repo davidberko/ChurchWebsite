@@ -1,15 +1,19 @@
 ChurchWebsite::Application.routes.draw do
   
+
   get "admin/log_in" => "sessions#new", as: "admin_log_in"
   get "admin/log_out" => "sessions#destroy", :as => "admin_log_out"
 
 
   get "admin/sign_up" => "admins#new", as: "admin_sign_up"
   
-  resources :admins
+  resources :admins 
+  resources :blogs
+
+  
   resources :sessions
   resources :landingpage
-
+  
   root to: "landingpage#index"
 
 
