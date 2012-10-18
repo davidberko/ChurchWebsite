@@ -8,8 +8,9 @@ ChurchWebsite::Application.routes.draw do
   
   resources :admins
   resources :sessions
+  resources :landingpage
 
-  root to: "admins#new"
+  root to: "landingpage#index"
 
 
 
