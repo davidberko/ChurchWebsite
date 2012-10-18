@@ -1,0 +1,25 @@
+<div id="big-wrapper">
+	<h1 id="main-header">New Hope Blog</h1>
+
+	<%= link_to "New Blog", new_blog_path %> 
+
+	<% @blogs.each do |blog| %>
+
+	<div id="blog-entry">
+		<section>
+			<article>
+				<p>
+					<%= blog.admin_id %>
+					<%= blog.body %>
+					<%= button_to "Delete", blog, method: :delete %>
+				</p>	
+			</article>
+		</section>
+	</div>
+
+	<% end %>
+
+	<script type="text/javascript">
+		
+	</script>
+</div>
