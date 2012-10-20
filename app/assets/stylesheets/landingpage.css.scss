@@ -44,36 +44,26 @@ td#social {
 	padding: 20px;
 }
 
-div#welcome-section {
-	
-}
-
 #right-sidebar {
 	width: 250px;	
 	border: 1px solid black;
 	float:right;
 }
 
-td#our-location {
-	width: 250px;
-	height: 246px;
-	border: 1px solid black;
-}
-td#up-next {
-	width: 250px;
-	height: 246px;
-	border: 1px solid black;
-}
-td#latest-message {
-	width: 250px;
-	height: 246px;
-	border: 1px solid black;
-}
 td#latest-blog {
 	width: 250px;
-	height: 246px;
+	height: 200px;
 	border: 1px solid black;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 10px;
+	}
+
+th {
+	height: 46px;
+	width: 250px;
 }
+
 footer {
 	border: 1px solid black;
 	clear: both;
