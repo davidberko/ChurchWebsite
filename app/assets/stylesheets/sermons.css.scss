@@ -1,0 +1,28 @@
+// Place all the styles related to the sermons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#sermons {
+	width: 500px;	
+	border: 1px solid black;
+	float:left;
+	margin: 20px;
+}
+
+#title {
+	width: 200px;
+	border: 1px solid black;
+	padding: 2px;
+}
+
+#pastor {
+	width: 200px;
+	border: 1px solid black;
+	padding: 2px;
+}
+
+#audio {
+	width: 500px;
+	border: 1px solid black;
+	margin: 1px;
+}

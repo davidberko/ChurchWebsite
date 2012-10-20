@@ -1,0 +1,23 @@
+<h1>New Hope Sermons</h1>
+
+<%= link_to "new sermon", new_sermon_path %><br>
+
+<% @sermons.each do |sermon| %>
+
+<table id="sermons">
+	<tr>
+		<th id="title">
+			<%= sermon.title %>
+		</th>
+		<th id="pastor">
+			by <%= sermon.pastor %>
+		</th>
+		<td id="audio">
+			<audio controls="controls">
+				<source src="<%= sermon.audio%>">
+
+			</audio>
+		</td>
+	</tr>
+</table>
+<% end %>
