@@ -8,7 +8,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(params[:blog])
+    @blog = Blog.new(params[:blog].merge(admin_id: current_user.id))
     if @blog.save
       redirect_to blogs_path
     else
@@ -17,6 +17,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @blog = Blog.find(params[:id])
   end
 
   def edit
@@ -30,5 +31,10 @@ class BlogsController < ApplicationController
     if @blog.destroy
       redirect_to blogs_path
     end
+  end
+
+  def most_recent
+    @blog = Blog.find(params[:id])
+    @blog = Blog.most_recent
   end
 end
