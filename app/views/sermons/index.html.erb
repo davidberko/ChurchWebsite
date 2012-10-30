@@ -1,11 +1,16 @@
+<div id="sermon-wrapper">
 <h1>New Hope Sermons</h1>
 
-<%= link_to "new sermon", new_sermon_path %><br>
+<button>Upload a Sermon</button>
+<div id="sermon-form"><%= render :template => "sermons/new" %></div><br>
+
 
 <% @sermons.each do |sermon| %>
 
 <table id="sermons">
+
 	<tr>
+
 		<th id="title">
 			<%= sermon.title %>
 		</th>
@@ -21,3 +26,18 @@
 	</tr>
 </table>
 <% end %>
+</div>
+
+<script type="text/javascript">
+	
+
+(function(){
+
+
+ $('#sermon-form').hide()
+
+	$('button').on('click', function(){
+		$('#sermon-form').show()
+	}
+})();
+</script>

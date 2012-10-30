@@ -2,23 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#sermon-wrapper {
+	width: 1000px;
+	margin-left: 400px;
+	border: 1px solid black;
+	height: 1000px;
+	padding: 100px;
+	margin-top: 100px;
+}
+
 #sermons {
 	width: 500px;	
 	border: 1px solid black;
-	float:left;
-	margin: 20px;
+	float: center;
+	border-radius: 25px;
+	padding: 20px;
+	background: black; 
+	margin-bottom: 20px;
+	margin-left: 100px;
 }
 
 #title {
 	width: 200px;
 	border: 1px solid black;
-	padding: 2px;
+	padding: 20px;
 }
 
 #pastor {
 	width: 200px;
 	border: 1px solid black;
-	padding: 2px;
+	padding: 20px;
 }
 
 #audio {
