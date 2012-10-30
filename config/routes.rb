@@ -1,6 +1,5 @@
 ChurchWebsite::Application.routes.draw do
   
-
   get "admin/log_in" => "sessions#new", as: "admin_log_in"
   get "admin/log_out" => "sessions#destroy", :as => "admin_log_out"
 
@@ -13,6 +12,7 @@ ChurchWebsite::Application.routes.draw do
   
   resources :sessions
   resources :landingpage
+  resources :sermons
   
   root to: "landingpage#index"
 
