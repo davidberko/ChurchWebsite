@@ -1,0 +1,18 @@
+<h3>New Sermon</h3>
+
+<%= form_for Sermon.new, html: { multipart: true } do |f| %>
+	<p>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</p>
+	<p>
+		<%= f.label :pastor %>
+		<%= f.text_field :pastor %>
+	</p>
+	<p>
+		<%= f.file_field :audio %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

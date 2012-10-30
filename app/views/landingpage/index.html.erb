@@ -1,71 +1,59 @@
 
 
-
-<div id="big-wrapper" style="">
+<body>
+<div id="big-wrapper">
 	<h1 id="main-header">New Hope Indiana</h1>
-		<div id="streaming-banner"><img src="rails.png"></div>
-		<div>
-			<table id="side-nav">
-				<tr>
-					<td id="link"><%= link_to "About", "#" %></td>
-				</tr>
-				<tr>
-					<td id="link"><%= link_to "Calendar", "#" %></td>
-				</tr>
-				<tr>
-					<td id="link"><%= link_to "Meet the Leaders", "#" %></td>
-				</tr>
-				<tr>
-					<td id="link"><%= link_to "Album", "#" %></td>
-				</tr>
-				<tr>
-					<td id="link"><%= link_to "Sermons", "#" %></td>
-				</tr>
-				<tr>
-					<td id="link"><%= link_to "Blog", blogs_path %></td>
-				</tr>
-				<tr>
-					<td id="social">Facebook</td>
-				</tr>
-			</table>
-			<table id="right-sidebar">
-					<th><em>Latest Blogs</em><button id="plus">+</button><button id="minus">-</button></th>
-					
-					<td id="latest-blog">
-							
-						<% @blogs.each do |b| %>
-							<p id="blog-body"><%= b.body %><p>
-						<%= link_to "continue reading", blog_path(b) %>
-					<% end %>
-					</td>
-					
-				</tr>
-			</table>
-		</div>
-		<footer>
-				Copyright David Berko 2012
-		</footer>
+	<div id="streaming-banner"><img src="rails.png"></div>
+		
+			
+		<ul id="main-nav">
+			<li id="link"><%= link_to "About", "#" %></li>
+			<li id="link"><%= link_to "Calendar", "#" %></li>
+			<li id="link"><%= link_to "Meet the Leaders", "#" %></li>
+			<li id="link"><%= link_to "Album", "#" %></li>
+			<li id="link"><%= link_to "Sermons", sermons_path %></li>
+			<li id="link"><%= link_to "Blog", blogs_path %></li>
+			<li id="welcome-section"></li>
+		</ul>
+
+	
+	
+	<aside id="welcome-section">
+		This is the welcome section
+	</aside>
+
+	<aside id="information-section">
+		This is another section
+	</aside>
 </div>
+<div id="footer">
+	<aside id="social">
+		<h4>Social</h3>
+		<p class="fb-like" data-send="true" data-width="450" data-show-faces="true">
+		</p>
+		<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+	</aside>
+	<footer id="the-footer">
+			Copyright David Berko 2012
+	</footer>
+</div>
+</body>
+
+
+
+
+
+
 
 <script type="text/javascript">
 	
-	(function (){
-		var body = $('#blog-body')
-			
-		$('button#plus').on('click', function() {
-			body.animate({
-				'fontSize': '+=5',
-				'width': '+=200'
+	(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 
-			});
-		});
-
-		$('button#minus').on('click', function() {
-			body.animate({
-				 'fontSize': '-=5',
-				 'width': '-=200'
-			});
-		});	
-	})();
-
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>

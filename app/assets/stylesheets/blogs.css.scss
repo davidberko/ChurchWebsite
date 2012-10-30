@@ -9,10 +9,17 @@
 	font-size: 100px;
 }
 
+#new-blog {
+	margin: 2px;
+}
+
 #blog-entry {
 	float: left;
 	border: 1px solid black;
 	width: 938px;
 	padding: 30px;
+	margin-top: 20px;
 	margin-bottom: 20px;
+	border-radius: 25px;
 }
+
